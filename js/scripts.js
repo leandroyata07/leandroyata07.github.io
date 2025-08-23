@@ -13,6 +13,16 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             icon.className = 'fas fa-moon';
         }
+        
+        // Atualizar navbar background se estiver scrollado
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            if (theme === 'dark') {
+                navbar.style.background = 'rgba(30, 41, 59, 0.95)';
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        }
     }
 
     function toggleTheme() {
@@ -69,12 +79,19 @@ document.addEventListener('DOMContentLoaded', function() {
     // Adicionar efeito de scroll na navbar
     window.addEventListener('scroll', function() {
         const navbar = document.querySelector('.navbar');
+        const isDarkTheme = document.documentElement.getAttribute('data-theme') === 'dark';
+        
         if (window.scrollY > 50) {
-            navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+            // Usar cor apropriada baseada no tema
+            if (isDarkTheme) {
+                navbar.style.background = 'rgba(30, 41, 59, 0.95)'; // Cor escura
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)'; // Cor clara
+            }
             navbar.style.backdropFilter = 'blur(10px)';
         } else {
             navbar.style.background = 'var(--bg-card)';
-            navbar.style.backdropFilter = 'none';
+            navbar.style.backdropFilter = 'blur(10px)';
         }
     });
 
