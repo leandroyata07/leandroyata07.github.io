@@ -78,6 +78,14 @@ body {
     color: var(--primary);
 }
 
+.logo-icon {
+    transition: transform 0.3s ease;
+}
+
+.nav-logo:hover .logo-icon {
+    transform: scale(1.1);
+}
+
 .nav-logo i {
     font-size: 2rem;
 }
@@ -617,8 +625,12 @@ body {
     margin-bottom: 1rem;
 }
 
-.footer-logo i {
-    font-size: 2rem;
+.footer-logo .logo-icon {
+    transition: transform 0.3s ease;
+}
+
+.footer-logo:hover .logo-icon {
+    transform: scale(1.05);
 }
 
 .footer-info p {
