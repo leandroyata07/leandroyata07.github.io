@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leandro Yata Suporte TI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="imagens/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <svg class="logo-icon" viewBox="0 0 100 80" width="32" height="26">
+                    <!-- Tela do laptop -->
+                    <rect x="5" y="5" width="90" height="60" rx="4" fill="#667eea" stroke="#4f46e5" stroke-width="2"/>
+                    <!-- Tela interna -->
+                    <rect x="10" y="10" width="80" height="50" rx="2" fill="var(--bg)" stroke="#e5e7eb" stroke-width="1"/>
+                    <!-- Texto LY -->
+                    <text x="50" y="35" font-family="Inter, sans-serif" font-size="36" font-weight="700" fill="#667eea" text-anchor="middle" dominant-baseline="middle">LY</text>
+                    <!-- Base do laptop -->
+                    <rect x="20" y="65" width="60" height="8" rx="4" fill="#667eea"/>
+                    <rect x="35" y="70" width="30" height="3" rx="2" fill="#4f46e5"/>
+                </svg>
+                <span>Leandro Yata</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Início</span>
+                </a>
+                <a href="#servicos" class="nav-link">
+                    <i class="fas fa-cogs"></i>
+                    <span>Serviços</span>
+                </a>
+                <a href="#precos" class="nav-link">
+                    <i class="fas fa-tag"></i>
+                    <span>Preços</span>
+                </a>
+                <a href="#contato" class="nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contato</span>
+                </a>
+                <button id="theme-toggle" class="theme-btn">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Suporte TI <span class="highlight">Profissional</span></h1>
+                    <p class="hero-subtitle">Soluções completas em tecnologia para você e sua empresa</p>
+                    <div class="hero-features">
+                        <div class="feature">
+                            <i class="fas fa-desktop"></i>
+                            <span>Suporte Remoto</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-cogs"></i>
+                            <span>Consultoria</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Aulas</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/5575991902534" class="btn btn-primary" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Chamar no WhatsApp
+                        </a>
+                        <a href="#servicos" class="btn btn-secondary">
+                            <i class="fas fa-info-circle"></i>
+                            Conhecer Serviços
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-img-container">
+                        <img src="imagens/A.png" alt="Suporte TI Profissional" class="hero-main-img">
+                        <div class="floating-card">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>100% Seguro</h3>
+                            <p>Atendimento via AnyDesk</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nossos Serviços</h2>
+                    <p>Soluções completas para suas necessidades tecnológicas</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="imagens/2.png" alt="Suporte Remoto" class="service-img">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-desktop"></i>
+                            </div>
+                            <h3>Suporte Remoto</h3>
+                            <ul class="service-list">
+                                <li><i class="fas fa-check"></i> Computador lento ou travando</li>
+                                <li><i class="fas fa-check"></i> Instalação de programas</li>
+                                <li><i class="fas fa-check"></i> Remoção de vírus/malware</li>
+                                <li><i class="fas fa-check"></i> Configuração de impressoras e Wi-Fi</li>
+                                <li><i class="fas fa-check"></i> Treinamento online de pessoal</li>
+                            </ul>
+                            <div class="service-badge">
+                                <i class="fas fa-remote-desktop"></i>
+                                Via AnyDesk
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card featured">
+                        <div class="popular-badge">Mais Popular</div>
+                        <div class="service-image">
+                            <img src="imagens/3.png" alt="Consultoria de PCs" class="service-img">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h3>Montagem de PCs</h3>
+                            <ul class="service-list">
+                                <li><i class="fas fa-check"></i> Computador para trabalho, estudo ou jogos</li>
+                                <li><i class="fas fa-check"></i> Tecnologias mais recentes</li>
+                                <li><i class="fas fa-check"></i> Melhor custo x benefício</li>
+                                <li><i class="fas fa-check"></i> Otimização conforme orçamento</li>
+                                <li><i class="fas fa-check"></i> Consultoria personalizada</li>
+                            </ul>
+                            <div class="service-badge">
+                                <i class="fas fa-star"></i>
+                                Especialidade
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="imagens/1.png" alt="Sistemas e Redes" class="service-img">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <h3>Sistemas e Redes</h3>
+                            <ul class="service-list">
+                                <li><i class="fas fa-check"></i> Instalação Windows e Linux</li>
+                                <li><i class="fas fa-check"></i> MS Office, LibreOffice e drivers</li>
+                                <li><i class="fas fa-check"></i> Configuração de rede interna</li>
+                                <li><i class="fas fa-check"></i> Ilha de impressão e backup</li>
+                                <li><i class="fas fa-check"></i> Acesso a servidores</li>
+                            </ul>
+                            <div class="service-badge">
+                                <i class="fas fa-server"></i>
+                                Redes Corporativas
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="imagens/4.png" alt="Aulas de Informática" class="service-img">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3>Aulas de Informática</h3>
+                            <ul class="service-list">
+                                <li><i class="fas fa-check"></i> Windows, Word, Excel</li>
+                                <li><i class="fas fa-check"></i> Navegação segura na internet</li>
+                                <li><i class="fas fa-check"></i> Treinamento de sistemas internos</li>
+                                <li><i class="fas fa-check"></i> Elaboração de manuais</li>
+                                <li><i class="fas fa-check"></i> Videoaulas personalizadas</li>
+                            </ul>
+                            <div class="service-badge">
+                                <i class="fas fa-video"></i>
+                                Manuais inclusos
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="precos" class="pricing">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Preços Transparentes</h2>
+                    <p>Valores justos e sem surpresas</p>
+                </div>
+                
+                <div class="pricing-table">
+                    <div class="pricing-card">
+                        <div class="price-header">
+                            <h3>Suporte Remoto</h3>
+                            <div class="price">R$ 50<span>/hora</span></div>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Atendimento imediato</li>
+                            <li><i class="fas fa-check"></i> Resolução online</li>
+                            <li><i class="fas fa-check"></i> Suporte pós-atendimento</li>
+                        </ul>
+                    </div>
+
+                    <div class="pricing-card popular">
+                        <div class="popular-tag">Mais Procurado</div>
+                        <div class="price-header">
+                            <h3>Montagem de PC</h3>
+                            <div class="price">R$ 60-120</div>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Orçamento detalhado</li>
+                            <li><i class="fas fa-check"></i> Montagem personalizada</li>
+                            <li><i class="fas fa-check"></i> Testes completos</li>
+                        </ul>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="price-header">
+                            <h3>Sistemas e Redes</h3>
+                            <div class="price">R$ 80-150</div>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Instalação completa</li>
+                            <li><i class="fas fa-check"></i> Configuração de rede</li>
+                            <li><i class="fas fa-check"></i> Backup e segurança</li>
+                        </ul>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="price-header">
+                            <h3>Aulas Particulares</h3>
+                            <div class="price">R$ 80<span>/4 aulas</span></div>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Material incluso</li>
+                            <li><i class="fas fa-check"></i> Videoaulas personalizadas</li>
+                            <li><i class="fas fa-check"></i> Manuais didáticos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Pronto para resolver seus problemas de TI?</h2>
+                    <p>Entre em contato agora e receba atendimento profissional</p>
+                    <a href="https://wa.me/5575991902534" class="btn btn-primary btn-large" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Chamar no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contato" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <svg class="logo-icon" viewBox="0 0 100 80" width="32" height="26">
+                            <!-- Tela do laptop -->
+                            <rect x="5" y="5" width="90" height="60" rx="4" fill="#667eea" stroke="#4f46e5" stroke-width="2"/>
+                            <!-- Tela interna -->
+                            <rect x="10" y="10" width="80" height="50" rx="2" fill="var(--bg)" stroke="#e5e7eb" stroke-width="1"/>
+                            <!-- Texto LY -->
+                            <text x="50" y="35" font-family="Inter, sans-serif" font-size="36" font-weight="700" fill="#667eea" text-anchor="middle" dominant-baseline="middle">LY</text>
+                            <!-- Base do laptop -->
+                            <rect x="20" y="65" width="60" height="8" rx="4" fill="#667eea"/>
+                            <rect x="35" y="70" width="30" height="3" rx="2" fill="#4f46e5"/>
+                        </svg>
+                        <span>Leandro Yata Suporte TI</span>
+                    </div>
+                    <p>Soluções profissionais em tecnologia para você e sua empresa.</p>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp: (75) 99190-2534</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email: leandroyata07@hotmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-services">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li>Suporte Remoto</li>
+                        <li>Montagem de PCs</li>
+                        <li>Sistemas e Redes</li>
+                        <li>Aulas de Informática</li>
+                        <li>Configuração de Servidores</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Leandro Yata Suporte TI. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
