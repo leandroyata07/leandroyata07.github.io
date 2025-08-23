@@ -102,10 +102,22 @@ body {
     font-weight: 500;
     transition: color 0.3s ease;
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-link i {
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
 }
 
 .nav-link:hover {
     color: var(--primary);
+}
+
+.nav-link:hover i {
+    transform: scale(1.1);
 }
 
 .nav-link::after {
@@ -722,6 +734,13 @@ body {
         border-bottom: 1px solid var(--border);
         width: 100%;
         text-align: left;
+        justify-content: flex-start;
+    }
+    
+    .nav-link i {
+        font-size: 1rem;
+        width: 20px;
+        text-align: center;
     }
     
     .hamburger.active span:nth-child(1) {
